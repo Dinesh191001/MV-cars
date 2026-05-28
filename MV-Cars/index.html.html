@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MV Cars | Car Rental & Self Drive</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+header{
+background:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-circle{
+width:55px;
+height:55px;
+border-radius:50%;
+background:#21c77a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+.logo span{
+color:#21c77a;
+}
+
+nav a{
+text-decoration:none;
+margin:0 10px;
+color:#000;
+font-weight:bold;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(to right,#ffffff,#dff7ea);
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero h2 span{
+color:#21c77a;
+}
+
+.hero p{
+font-size:20px;
+max-width:850px;
+margin:auto;
+line-height:1.6;
+}
+
+.hero img{
+width:90%;
+max-width:850px;
+margin-top:40px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin:50px 0 20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+font-size:28px;
+color:#21c77a;
+margin-bottom:10px;
+}
+
+.price{
+font-size:35px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.card ul{
+line-height:2;
+margin-left:20px;
+}
+
+.about{
+padding:60px 20px;
+background:white;
+text-align:center;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+}
+
+.contact{
+background:#111;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+.contact a{
+color:#21c77a;
+text-decoration:none;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h2{
+font-size:36px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<div class="logo-circle">
+MV
+</div>
+
+<div>
+<h1>MV <span>Cars</span></h1>
+<p>Car Rental & Self Drive</p>
+</div>
+
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<h2>
+Where Every <span>Journey</span><br>
+Feels <span>Premium</span>
+</h2>
+
+<p>
+From family trips to business travel,
+enjoy premium cars with flexible rental
+and self-drive options at affordable prices.
+</p>
+
+<img src="mvcars.jpeg" alt="MV Cars">
+
+</section>
+
+<h2 class="section-title">Our Rental Plans</h2>
+
+<section class="cards" id="services">
+
+<div class="card">
+
+<h3>5 Seater</h3>
+
+<div class="price">
+₹16/km
+</div>
+
+<ul>
+<li>Honda City</li>
+<li>Honda Civic</li>
+<li>Hyundai i20</li>
+<li>Skoda Slavia</li>
+<li>Comfortable Seating</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>7 Seater</h3>
+
+<div class="price">
+₹17/km
+</div>
+
+<ul>
+<li>Toyota Innova</li>
+<li>Mahindra Xylo</li>
+<li>Extra Luggage Space</li>
+<li>Long Distance Travel</li>
+<li>Family Friendly</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Self Drive</h3>
+
+<div class="price">
+Flexible Pricing
+</div>
+
+<ul>
+<li>Daily Rentals</li>
+<li>Weekly Rentals</li>
+<li>Clean Cars</li>
+<li>Easy Pickup</li>
+<li>24/7 Support</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2 class="section-title">
+About MV Cars
+</h2>
+
+<p>
+MV Cars provides trusted car rental and self-drive services across Pondicherry and Tamil Nadu.
+We offer clean, comfortable, and premium vehicles for family trips,
+airport travel, weddings, business tours, and outstation rides.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+<i class="fa-solid fa-phone"></i>
++91 9150654805
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Pondicherry & Tamil Nadu
+</p>
+
+<p>
+<i class="fa-brands fa-whatsapp"></i>
+
+<a href="https://wa.me/919150654805">
+Chat on WhatsApp
+</a>
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 MV Cars | Premium Rental Services
+</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919150654805"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+</body>
+</html>
